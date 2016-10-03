@@ -1,0 +1,9 @@
+version: '2'
+services:
+  kort-app:
+    image: kort/kort-app
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "8808:80"
